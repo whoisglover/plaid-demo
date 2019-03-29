@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 var moment = require('moment');
 var plaid = require('plaid');
 
-var APP_PORT = 8000;
+var APP_PORT = process.env.PORT || 8000;
 var PLAID_CLIENT_ID = process.env.PLAID_CLIENT_ID;
 var PLAID_SECRET = process.env.PLAID_SECRET;
 var PLAID_PUBLIC_KEY = process.env.PLAID_PUBLIC_KEY;
